@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import NavItem, { NavItemInterface } from "../Navitem";
 import "./index.css";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const items: NavItemInterface[] = [
@@ -10,11 +12,7 @@ export default function Navbar() {
       label: "Ínicio",
     },
     {
-      url: "/about",
-      label: "Sobre",
-    },
-    {
-      url: "/products",
+      url: "/vitrine",
       label: "Produtos",
     },
     {
@@ -27,16 +25,23 @@ export default function Navbar() {
     },
   ];
 
+  const pathname = usePathname();
+
   return (
     <header>
       <nav className="navbar">
-        <Link href="/">
-          <Image src="/logo.png" width={50} height={50} alt="Logo do sistema" />
+        <Link href="/" className="logo">
+          <Image src="logo.svg" width={50} height={50} alt="Logo do sistema" />
         </Link>
 
         <ul className="nav-items">
           {items.map((item, index) => (
-            <NavItem key={index} url={item.url} label={item.label} />
+            <NavItem
+              key={index}
+              url={item.url}
+              label={item.label}
+              isActive={pathname === item.url}
+            />
           ))}
         </ul>
 

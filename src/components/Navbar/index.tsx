@@ -9,7 +9,7 @@ export default function Navbar() {
   const items: NavItemInterface[] = [
     {
       url: "/",
-      label: "Ínicio",
+      label: "Início",
     },
     {
       url: "/vitrine",

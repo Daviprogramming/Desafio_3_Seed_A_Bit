@@ -17,7 +17,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
           <Button href="/vitrine">Ver Ofertas</Button>
-          <Button variant="secundary" href="/sobre">
+          <Button variant="secundary" href="#sobre">
             Sobre Nós
           </Button>
         </div>

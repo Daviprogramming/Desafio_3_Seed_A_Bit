@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 export default function About() {
   return (
-    <section className="bg-white py-16">
+    <section id="sobre" className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1 w-full">
           <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-xl bg-gray-100">

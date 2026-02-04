@@ -16,12 +16,8 @@ export default function Navbar() {
       label: "Produtos",
     },
     {
-      url: "/services",
-      label: "Serviços",
-    },
-    {
-      url: "/contacts",
-      label: "Contatos",
+      url: "#sobre",
+      label: "Sobre Nós",
     },
   ];
 
@@ -34,7 +30,7 @@ export default function Navbar() {
           <Image src="logo.svg" width={50} height={50} alt="Logo do sistema" />
         </Link>
 
-        <ul className="nav-items">
+        <ul className="nav-items justify-center items-center">
           {items.map((item, index) => (
             <NavItem
               key={index}
@@ -44,8 +40,6 @@ export default function Navbar() {
             />
           ))}
         </ul>
-
-        <button className="btn-default">Contatar</button>
       </nav>
     </header>
   );

@@ -16,7 +16,7 @@ export default function Navbar() {
       label: "Produtos",
     },
     {
-      url: "#sobre",
+      url: "/#sobre",
       label: "Sobre Nós",
     },
   ];

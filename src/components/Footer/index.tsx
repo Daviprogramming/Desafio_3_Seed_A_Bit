@@ -16,7 +16,7 @@ export default function Footer() {
       label: "Produtos",
     },
     {
-      url: "#",
+      url: "/#sobre",
       label: "Sobre Nós",
     },
   ];

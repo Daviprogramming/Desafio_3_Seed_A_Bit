@@ -1,9 +1,8 @@
 import Button from "../Button";
-
 export default function Hero() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center justify-center gap-12 min-h-[calc(100vh-100px)]">
-      <div className="flex-1 text-center md:text-left space-y-6">
+      <div className="text-center md:text-left space-y-6">
         <div className="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-2">
           Nova Coleção 2026
         </div>
@@ -19,11 +18,10 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
           <Button href="/vitrine">Ver Ofertas</Button>
           <Button variant="secundary" href="/sobre">
-            Saiba mais
+            Sobre Nós
           </Button>
         </div>
       </div>
-      <div className="flex-1">Aqui vai a imagem</div>
     </section>
   );
 }

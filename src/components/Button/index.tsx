@@ -8,7 +8,7 @@ interface Buttonprops {
   className?: string;
 }
 
-export default function ({
+export default function Button({
   children,
   variant = "primary",
   href,

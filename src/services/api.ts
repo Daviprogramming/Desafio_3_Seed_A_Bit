@@ -5,10 +5,18 @@ export interface Product {
   title: string;
   description: string;
   price: number;
+  thumbnail: string;
+  category: string;
 }
 
 export interface GetProductsDTO {
   products: Product[];
+}
+
+export interface CreateProductDTO {
+  title: string;
+  description: string;
+  price: number;
 }
 
 export async function getProducts(): Promise<Product[]> {
@@ -17,7 +25,7 @@ export async function getProducts(): Promise<Product[]> {
   return data.products;
 }
 
-export async function postProducts(product: Product): Promise<void> {
+export async function postProducts(product: CreateProductDTO): Promise<void> {
   const response = await fetch("https://dummyjson.com/products/add", {
     method: "POST",
     body: JSON.stringify(product),
